@@ -59,6 +59,11 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "*.tcc": "cpp",
+        "clocale": "cpp",
+        "unordered_map": "cpp",
+        "fstream": "cpp",
+        "complex": "cpp"
     }
 }
