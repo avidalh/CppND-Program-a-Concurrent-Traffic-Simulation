@@ -1,3 +1,0 @@
-/Users/angelvidal/Udacity/ND/CppND/CppND-Program-a-Concurrent-Traffic-Simulation/build/CMakeFiles/rebuild_cache.dir
-/Users/angelvidal/Udacity/ND/CppND/CppND-Program-a-Concurrent-Traffic-Simulation/build/CMakeFiles/edit_cache.dir
-/Users/angelvidal/Udacity/ND/CppND/CppND-Program-a-Concurrent-Traffic-Simulation/build/CMakeFiles/traffic_simulation.dir
