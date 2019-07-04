@@ -23,7 +23,7 @@ public:
     void send(T &&msg);
 
 private:
-    std::condition_variable _cond;
+    std::condition_variable _conditionWait;
     std::mutex _mutex;
     std::deque<T> _queue;
 };
