@@ -19,11 +19,12 @@ template <class T>
 class MessageQueue
 {
 public:
+    MessageQueue(){}
     T receive();
     void send(T &&msg);
 
 private:
-    std::condition_variable _conditionWait;
+    std::condition_variable _condition;
     std::mutex _mutex;
     std::deque<T> _queue;
 };
@@ -55,7 +56,10 @@ private:
     // FP.4b : create a private member of type MessageQueue for messages of type TrafficLightPhase 
     // and use it within the infinite loop to push each new TrafficLightPhase into it by calling 
     // send in conjunction with move semantics.
-    MessageQueue<TrafficLightPhase> phaseQueue;
+    
+    std::shared_ptr<MessageQueue<TrafficLightPhase>> _queue{new MessageQueue<TrafficLightPhase>};
+    std::condition_variable _condition;
+    std::mutex _mutex;
 };
 
 #endif
